@@ -1,0 +1,78 @@
+{
+  "entity": {
+    "sensor": {
+      "state": {
+        "default": "mdi:robot"
+      },
+      "decode_speed": {
+        "default": "mdi:speedometer"
+      },
+      "prefill_speed": {
+        "default": "mdi:book-open-page-variant"
+      },
+      "active_requests": {
+        "default": "mdi:account-multiple"
+      },
+      "queued_requests": {
+        "default": "mdi:tray-full"
+      },
+      "prefix_hit": {
+        "default": "mdi:cached"
+      },
+      "prefix_hit_lifetime": {
+        "default": "mdi:cached"
+      },
+      "ttft": {
+        "default": "mdi:timer-outline"
+      },
+      "kv_usage": {
+        "default": "mdi:database"
+      },
+      "requests_total": {
+        "default": "mdi:counter"
+      },
+      "output_tokens_total": {
+        "default": "mdi:text-box-outline"
+      },
+      "prompt_tokens_total": {
+        "default": "mdi:text-box-multiple-outline"
+      },
+      "cached_tokens_total": {
+        "default": "mdi:text-box-check-outline"
+      },
+      "gpu_utilization": {
+        "default": "mdi:expansion-card"
+      },
+      "vram_used": {
+        "default": "mdi:memory"
+      },
+      "vram_usage": {
+        "default": "mdi:memory"
+      },
+      "ram_used": {
+        "default": "mdi:memory"
+      },
+      "cpu_usage": {
+        "default": "mdi:cpu-64-bit"
+      },
+      "backend": {
+        "default": "mdi:engine"
+      },
+      "model": {
+        "default": "mdi:brain"
+      },
+      "requests_total_lifetime": {
+        "default": "mdi:counter"
+      },
+      "output_tokens_total_lifetime": {
+        "default": "mdi:text-box-outline"
+      },
+      "prompt_tokens_total_lifetime": {
+        "default": "mdi:text-box-multiple-outline"
+      },
+      "cached_tokens_total_lifetime": {
+        "default": "mdi:text-box-check-outline"
+      }
+    }
+  }
+}

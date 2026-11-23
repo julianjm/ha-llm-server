@@ -1,0 +1,121 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LLM server",
+        "description": "Basalt, SGLang or vLLM server to monitor. The engine is detected from its /metrics.",
+        "data": {
+          "url": "URL"
+        },
+        "data_description": {
+          "url": "Base URL of the server, e.g. http://192.168.1.10:3030"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach /metrics on that URL",
+      "unknown_backend": "/metrics answered, but it is not Basalt, SGLang or vLLM"
+    },
+    "abort": {
+      "already_configured": "This server is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Polling",
+        "data": {
+          "scan_interval": "Scan interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often /metrics is read. Shorter intervals make the GPU energy more accurate."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "state": {
+        "name": "State"
+      },
+      "decode_speed": {
+        "name": "Decode speed"
+      },
+      "prefill_speed": {
+        "name": "Prefill speed"
+      },
+      "active_requests": {
+        "name": "Active requests"
+      },
+      "queued_requests": {
+        "name": "Queued requests"
+      },
+      "prefix_hit": {
+        "name": "Prefix cache hit"
+      },
+      "prefix_hit_lifetime": {
+        "name": "Prefix cache hit (lifetime)"
+      },
+      "ttft": {
+        "name": "Time to first token"
+      },
+      "kv_usage": {
+        "name": "KV cache usage"
+      },
+      "requests_total": {
+        "name": "Requests"
+      },
+      "output_tokens_total": {
+        "name": "Output tokens"
+      },
+      "prompt_tokens_total": {
+        "name": "Prompt tokens"
+      },
+      "cached_tokens_total": {
+        "name": "Cached prompt tokens"
+      },
+      "gpu_power": {
+        "name": "GPU power"
+      },
+      "gpu_energy": {
+        "name": "GPU energy"
+      },
+      "gpu_utilization": {
+        "name": "GPU utilization"
+      },
+      "gpu_temperature": {
+        "name": "GPU temperature"
+      },
+      "vram_used": {
+        "name": "VRAM used"
+      },
+      "vram_usage": {
+        "name": "VRAM usage"
+      },
+      "ram_used": {
+        "name": "Host RAM used"
+      },
+      "cpu_usage": {
+        "name": "Host CPU usage"
+      },
+      "backend": {
+        "name": "Engine"
+      },
+      "model": {
+        "name": "Model"
+      },
+      "requests_total_lifetime": {
+        "name": "Requests (lifetime)"
+      },
+      "output_tokens_total_lifetime": {
+        "name": "Output tokens (lifetime)"
+      },
+      "prompt_tokens_total_lifetime": {
+        "name": "Prompt tokens (lifetime)"
+      },
+      "cached_tokens_total_lifetime": {
+        "name": "Cached tokens (lifetime)"
+      }
+    }
+  }
+}

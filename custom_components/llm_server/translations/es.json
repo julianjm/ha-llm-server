@@ -1,0 +1,121 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Servidor LLM",
+        "description": "Servidor Basalt, SGLang o vLLM a monitorizar. El motor se detecta a partir de su /metrics.",
+        "data": {
+          "url": "URL"
+        },
+        "data_description": {
+          "url": "URL base del servidor, p. ej. http://192.168.1.10:3030"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "No se puede acceder a /metrics en esa URL",
+      "unknown_backend": "/metrics responde, pero no es Basalt, SGLang ni vLLM"
+    },
+    "abort": {
+      "already_configured": "Este servidor ya está configurado"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Consulta",
+        "data": {
+          "scan_interval": "Intervalo de consulta (segundos)"
+        },
+        "data_description": {
+          "scan_interval": "Cada cuánto se lee /metrics. Con intervalos más cortos la energía de la GPU es más precisa."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "state": {
+        "name": "Estado"
+      },
+      "decode_speed": {
+        "name": "Velocidad de decode"
+      },
+      "prefill_speed": {
+        "name": "Velocidad de prefill"
+      },
+      "active_requests": {
+        "name": "Peticiones activas"
+      },
+      "queued_requests": {
+        "name": "Peticiones en cola"
+      },
+      "prefix_hit": {
+        "name": "Acierto de caché de prefijo"
+      },
+      "prefix_hit_lifetime": {
+        "name": "Acierto de caché de prefijo (histórico)"
+      },
+      "ttft": {
+        "name": "Tiempo hasta el primer token"
+      },
+      "kv_usage": {
+        "name": "Uso de caché KV"
+      },
+      "requests_total": {
+        "name": "Peticiones"
+      },
+      "output_tokens_total": {
+        "name": "Tokens generados"
+      },
+      "prompt_tokens_total": {
+        "name": "Tokens de prompt"
+      },
+      "cached_tokens_total": {
+        "name": "Tokens de prompt en caché"
+      },
+      "gpu_power": {
+        "name": "Potencia de la GPU"
+      },
+      "gpu_energy": {
+        "name": "Energía de la GPU"
+      },
+      "gpu_utilization": {
+        "name": "Uso de la GPU"
+      },
+      "gpu_temperature": {
+        "name": "Temperatura de la GPU"
+      },
+      "vram_used": {
+        "name": "VRAM usada"
+      },
+      "vram_usage": {
+        "name": "Uso de VRAM"
+      },
+      "ram_used": {
+        "name": "RAM usada del host"
+      },
+      "cpu_usage": {
+        "name": "Uso de CPU del host"
+      },
+      "backend": {
+        "name": "Motor"
+      },
+      "model": {
+        "name": "Modelo"
+      },
+      "requests_total_lifetime": {
+        "name": "Peticiones (histórico)"
+      },
+      "output_tokens_total_lifetime": {
+        "name": "Tokens generados (histórico)"
+      },
+      "prompt_tokens_total_lifetime": {
+        "name": "Tokens de prompt (histórico)"
+      },
+      "cached_tokens_total_lifetime": {
+        "name": "Tokens de prompt en caché (histórico)"
+      }
+    }
+  }
+}
