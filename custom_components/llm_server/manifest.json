@@ -1,7 +1,13 @@
 {
   "domain": "llm_server",
   "name": "LLM Server",
-  "codeowners": ["@julianjm"],
+  "categories": [
+    "computers_network.monitoring",
+    "energy.meters_monitoring"
+  ],
+  "codeowners": [
+    "@julianjm"
+  ],
   "config_flow": true,
   "documentation": "https://github.com/julianjm/ha-llm-server",
   "integration_type": "device",
