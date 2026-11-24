@@ -1,12 +1,12 @@
 {
   "domain": "llm_server",
   "name": "LLM Server",
-  "codeowners": [],
+  "codeowners": ["@julianjm"],
   "config_flow": true,
-  "documentation": "https://github.com/OWNER/ha-llm-server",
+  "documentation": "https://github.com/julianjm/ha-llm-server",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/OWNER/ha-llm-server/issues",
+  "issue_tracker": "https://github.com/julianjm/ha-llm-server/issues",
   "requirements": [],
   "version": "0.1.0"
 }
